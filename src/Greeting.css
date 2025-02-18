@@ -1,0 +1,69 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal del componente */
+.greeting-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px 50px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilo del título */
+.greeting-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del párrafo */
+.greeting-container p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Botón estilizado */
+.greeting-button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.greeting-button:hover {
+  background-color: #ff6347;
+  transform: scale(1.05);
+}
+
+.greeting-button:active {
+  transform: scale(0.95);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
